@@ -1,0 +1,33 @@
+{
+  "name": "RxDefaultsRelay",
+  "version": "1.0.0",
+  "summary": "Reactive API library written in Swift",
+  "homepage": "https://github.com/martindaum/RxDefaultsRelay",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "martindaum": "office@martindaum.com"
+  },
+  "source": {
+    "git": "https://github.com/martindaum/RxDefaultsRelay.git",
+    "tag": "1.0.0"
+  },
+  "platforms": {
+    "ios": "8.0",
+    "osx": "10.10",
+    "tvos": "9.0",
+    "watchos": "2.0"
+  },
+  "source_files": "RxDefaultsRelay/Classes/**/*",
+  "swift_version": "4.2",
+  "dependencies": {
+    "RxSwift": [
+      "~> 4.0"
+    ],
+    "RxCocoa": [
+      "~> 4.0"
+    ]
+  }
+}

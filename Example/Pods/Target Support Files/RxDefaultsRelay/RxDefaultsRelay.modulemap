@@ -1,0 +1,6 @@
+framework module RxDefaultsRelay {
+  umbrella header "RxDefaultsRelay-umbrella.h"
+
+  export *
+  module * { export * }
+}
