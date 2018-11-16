@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name             = 'RxDefaultsRelay'
-    s.version          = '1.0.1'
+    s.version          = '1.0.2'
     s.summary                  = 'Reactive API library written in Swift'
     s.homepage         = 'https://github.com/martindaum/RxDefaultsRelay'
     s.license          = { :type => 'MIT', :file => 'LICENSE' }
