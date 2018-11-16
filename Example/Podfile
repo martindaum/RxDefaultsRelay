@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'RxDefaultsRelay_Example' do
+  pod 'RxDefaultsRelay', :path => '../'
+
+  target 'RxDefaultsRelay_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
