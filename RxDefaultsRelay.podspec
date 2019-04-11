@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
     s.name             = 'RxDefaultsRelay'
-    s.version          = '1.0.2'
-    s.summary                  = 'Reactive API library written in Swift'
+    s.version          = '1.0.3'
+    s.summary          = 'Reactive API library written in Swift'
     s.homepage         = 'https://github.com/martindaum/RxDefaultsRelay'
     s.license          = { :type => 'MIT', :file => 'LICENSE' }
     s.author           = { 'martindaum' => 'office@martindaum.com' }
@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
     s.watchos.deployment_target = '2.0'
     
     s.source_files = 'RxDefaultsRelay/Classes/**/*'
-    s.swift_version = '4.2'
+    s.swift_version = '5.0'
     s.dependency 'RxSwift', '~> 4.0'
     s.dependency 'RxCocoa', '~> 4.0'
 end
