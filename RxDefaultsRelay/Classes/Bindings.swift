@@ -7,10 +7,10 @@
 
 import Foundation
 import RxSwift
-import RxCocoa
+import RxRelay
 
-extension ObservableType where E: Codable {
-    public func bind(to relay: DefaultsRelay<E>) -> Disposable {
+extension ObservableType where Element: Codable {
+    public func bind(to relay: DefaultsRelay<Element>) -> Disposable {
         return subscribe { e in
             switch e {
             case .next(let element):
@@ -23,7 +23,7 @@ extension ObservableType where E: Codable {
         }
     }
     
-    public func bind(to relay: DefaultsRelay<E?>) -> Disposable {
-        return self.map { $0 as E? }.bind(to: relay)
+    public func bind(to relay: DefaultsRelay<Element?>) -> Disposable {
+        return self.map { $0 as Element? }.bind(to: relay)
     }
 }

@@ -1,17 +1,17 @@
 PODS:
-  - RxCocoa (4.5.0):
-    - RxSwift (>= 4.4.2, ~> 4.4)
-  - RxDefaultsRelay (1.0.2):
-    - RxCocoa (~> 4.0)
-    - RxSwift (~> 4.0)
-  - RxSwift (4.5.0)
+  - RxDefaultsRelay (1.0.3):
+    - RxRelay (~> 5.0)
+    - RxSwift (~> 5.0)
+  - RxRelay (5.0.0):
+    - RxSwift (~> 5)
+  - RxSwift (5.0.0)
 
 DEPENDENCIES:
   - RxDefaultsRelay (from `../`)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
-    - RxCocoa
+    - RxRelay
     - RxSwift
 
 EXTERNAL SOURCES:
@@ -19,10 +19,10 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  RxCocoa: cbf70265dc65a981d4ac982e513c10cf23df24a0
-  RxDefaultsRelay: 1989e8d285dbca7f73001f813bcddbc47c76610b
-  RxSwift: f172070dfd1a93d70a9ab97a5a01166206e1c575
+  RxDefaultsRelay: 6ac736bd5101e0a31852b232c82fb178ad7d5b81
+  RxRelay: 4f7409406a51a55cd88483f21ed898c234d60f18
+  RxSwift: 8b0671caa829a763bbce7271095859121cbd895f
 
 PODFILE CHECKSUM: 1e057024878e01561a137d3a4e0022d142f60e70
 
-COCOAPODS: 1.6.1
+COCOAPODS: 1.7.5

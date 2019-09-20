@@ -1,6 +1,6 @@
 import Foundation
 import RxSwift
-import RxCocoa
+import RxRelay
 
 private struct DefaultsWrapper<T: Codable>: Codable {
     let wrappedValue: T
@@ -52,7 +52,7 @@ public final class DefaultsRelay<T: Codable>: ObservableType {
         return relay.value
     }
     
-    public func subscribe<O: ObserverType>(_ observer: O) -> Disposable where O.E == E {
+    public func subscribe<O: ObserverType>(_ observer: O) -> Disposable where O.Element == E {
         return relay.subscribe(observer)
     }
 
